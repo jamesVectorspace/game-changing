@@ -1,5 +1,6 @@
 // use client
-import { Avatar,
+import {
+  Avatar,
   AvatarGroup,
   AvatarSection,
   Container,
@@ -24,17 +25,16 @@ import { Avatar,
   ScrollDownText,
   Structure,
   Title,
- } from "./Style"
-import { isMobile } from "react-device-detect"
-import xBorg1 from "../../../assets/imgs/xBorg1.png"
-import xBorg2 from "../../../assets/imgs/xBorg2.png"
-import scrolldown from "../../../assets/imgs/scrolldown.svg"
-import avatar from "../../../assets/imgs/avatar.png"
-import lock from "../../../assets/imgs/lock.svg"
-
+} from "./Style";
+import { isMobile } from "react-device-detect";
+import xBorg1 from "../../../assets/imgs/xBorg1.png";
+import xBorg2 from "../../../assets/imgs/xBorg2.png";
+import scrolldown from "../../../assets/imgs/scrolldown.svg";
+import avatar from "../../../assets/imgs/avatar.png";
+import lock from "../../../assets/imgs/lock.svg";
 
 const Infrastructure: React.FC = () => {
-  return(
+  return (
     <Container>
       {isMobile ? null : <LeftImage src={xBorg1.src} alt="xBorg1" />}
       <Structure isMobile={isMobile}>
@@ -42,7 +42,11 @@ const Infrastructure: React.FC = () => {
           <Header>lorem ipsum dolor</Header>
           <Frame>
             <Title isMobile={isMobile}>game-changing infrastructure</Title>
-            <Description>A decentralised, non-custodial social graph, empowering players to take full ownership of their gaming identities and enabling developers to build next-gen applications.</Description>
+            <Description>
+              A decentralised, non-custodial social graph, empowering players to
+              take full ownership of their gaming identities and enabling
+              developers to build next-gen applications.
+            </Description>
           </Frame>
           <JoinButton>
             <JoinText>Join Discord</JoinText>
@@ -78,7 +82,7 @@ const Infrastructure: React.FC = () => {
         <ScrollDownIcon src={scrolldown.src} alt="Scroll Down" />
       </ScrollDown>
     </Container>
-    )
-}
+  );
+};
 
 export default Infrastructure;
