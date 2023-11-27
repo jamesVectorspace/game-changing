@@ -54,7 +54,7 @@ const GamingWeb: React.FC = () => {
             onMouseEnter={() => mouseEnter(false)}
             onMouseLeave={() => setIsHover(false)}
             isHover={isHover}
-            isRight={isRight}
+            isright={isRight}
             isMobile={isMobile}
           >
             <AvatarImage src={avatar1.src} alt="Avatar1" />
@@ -120,7 +120,7 @@ const GamingWeb: React.FC = () => {
             onMouseEnter={() => mouseEnter(true)}
             onMouseLeave={() => setIsHover(false)}
             isHover={isHover}
-            isRight={isRight}
+            isright={isRight}
             isMobile={isMobile}
           >
             <AvatarImage src={avatar2.src} alt="Avatar2" />
@@ -188,7 +188,7 @@ const GamingWeb: React.FC = () => {
             onMouseEnter={() => mouseEnter(false)}
             onMouseLeave={() => setIsHover(false)}
             isHover={isHover}
-            isRight={isRight}
+            isright={isRight}
             isMobile={isMobile}
           >
             <AvatarImage src={avatar3.src} alt="Avatar3" />
@@ -254,7 +254,7 @@ const GamingWeb: React.FC = () => {
             onMouseEnter={() => mouseEnter(true)}
             onMouseLeave={() => setIsHover(false)}
             isHover={isHover}
-            isRight={isRight}
+            isright={isRight}
             isMobile={isMobile}
           >
             <AvatarImage src={avatar4.src} alt="Avatar4" />
@@ -322,7 +322,7 @@ const GamingWeb: React.FC = () => {
             onMouseEnter={() => mouseEnter(false)}
             onMouseLeave={() => setIsHover(false)}
             isHover={isHover}
-            isRight={isRight}
+            isright={isRight}
             isMobile={isMobile}
           >
             <AvatarImage src={avatar5.src} alt="Avatar5" />
@@ -388,7 +388,7 @@ const GamingWeb: React.FC = () => {
             onMouseEnter={() => mouseEnter(true)}
             onMouseLeave={() => setIsHover(false)}
             isHover={isHover}
-            isRight={isRight}
+            isright={isRight}
             isMobile={isMobile}
           >
             <AvatarImage src={avatar6.src} alt="Avatar6" />

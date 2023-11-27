@@ -96,7 +96,7 @@ export const AvatarRed = styled.div`
 `;
 export const Avatar = styled.div<{
   isHover: boolean;
-  isRight: boolean;
+  isright: boolean;
   isMobile: boolean;
 }>`
   filter: ${(props) => (props.isHover ? "blur(10px)" : "blur(0px)")};
@@ -126,14 +126,14 @@ export const Avatar = styled.div<{
 
   &:hover ${AvatarRed} {
     margin-left: ${(props) =>
-      props.isRight && !props.isMobile ? "314px" : "0px"};
+      props.isright && !props.isMobile ? "314px" : "0px"};
   }
 
   &:hover ${AvatarModal} {
     display: flex;
     top: -16px;
     left: ${(props) =>
-      props.isMobile ? "-70px" : props.isRight ? "-341px" : "-24px"};
+      props.isMobile ? "-70px" : props.isright ? "-341px" : "-24px"};
     right: ${(props) => (props.isMobile ? "-70px" : "auto")};
     align-items: ${(props) => (props.isMobile ? "center" : "flex-start")};
   }

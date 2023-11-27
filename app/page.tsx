@@ -1,6 +1,19 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
 
-export default function Home() {
-  return <div className={styles.main}></div>;
-}
+import React from "react";
+import Infrastructure from "./components/Infrastructure/Infrastructure";
+import { Container } from "./globals";
+import Network from "./components/Network/Network";
+import GamingWeb from "./components/GamingWeb/GaminWeb";
+
+const Home: React.FC = () => {
+  return (
+    <Container>
+      <Infrastructure />
+      <Network />
+      <GamingWeb />
+    </Container>
+  );
+};
+
+export default Home;
